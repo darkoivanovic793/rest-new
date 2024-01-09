@@ -1,0 +1,341 @@
+{
+	"info": {
+		"_postman_id": "27e4b0b9-1dc2-46cf-babc-ef9a043c2c38",
+		"name": "Kolekcija",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/tutorials",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":7,\n\t\"title\":\"Novi net\",\n\t\"description\":\"Novi net podataka\",\n\t\"published\":1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/tutorials",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tutorials"
+					]
+				},
+				"description": "POST unos u tabelu tutorials."
+			},
+			"response": []
+		},
+		{
+			"name": "Upit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/tutorials",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n\t{\"title\":\"Ad\",\"description\":170,\"published\":1, \"id\" : 6}\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/tutorials",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tutorials"
+					]
+				},
+				"description": "Update"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/tutorials/6",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/tutorials/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tutorials",
+						"6"
+					]
+				},
+				"description": "Delete "
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/tutorials",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/tutorials",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tutorials"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/tutorials",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":6,\n\t\"title\":\"Novi net\",\n\t\"description\":\"Novi net podataka\",\n\t\"published\":0\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/tutorials",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tutorials"
+					]
+				},
+				"description": "INSERT RECORD"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/tutorials/publish/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/tutorials/publish/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tutorials",
+						"publish",
+						"1"
+					]
+				},
+				"description": "publish tutorials"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/tutorials/unpublish/0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/tutorials/unpublish/0",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tutorials",
+						"unpublish",
+						"0"
+					]
+				},
+				"description": "Unpublish tutorials"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/tutorials/title/Proba",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/tutorials/title/Proba",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tutorials",
+						"title",
+						"Proba"
+					]
+				},
+				"description": "Get by title"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/tutorials/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/tutorials/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tutorials",
+						"1"
+					]
+				},
+				"description": "Get tutorials by Id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/tutorials",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/tutorials",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tutorials"
+					]
+				},
+				"description": "Get all tutorials"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/tutorials/published_id/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/tutorials/published_id/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tutorials",
+						"published_id",
+						"2"
+					]
+				},
+				"description": "get id by published"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/tutorials/unpublished_id/5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/tutorials/unpublished_id/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tutorials",
+						"unpublished_id",
+						"5"
+					]
+				},
+				"description": "Get by id unpublished"
+			},
+			"response": []
+		}
+	]
+}
