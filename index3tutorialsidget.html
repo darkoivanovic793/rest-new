@@ -1,0 +1,28 @@
+
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <meta name="viewport" 
+          content='width=device-width,  
+                         initial-scale=1.0'> 
+    <title>Calling the Web Services in HTML5</title> 
+</head> 
+  
+<body style="text-align:center"> 
+    <h1 style="color:green">Tutorials</h1> 
+    <h3>Calling the Web Services in HTML5</h3> 
+    <script> 
+        var xhr = new XMLHttpRequest( ); 
+        xhr.onload = (res)=>{ 
+           if(res.target.status == 200){ 
+             document.body.innerHTML +=  
+             (res.target.responseText); 
+           } 
+        } 
+        xhr.open("GET","http://localhost:3000/tutorials/1",true); 
+        xhr.send(); 
+    </script> 
+</body> 
+  
+</html>
